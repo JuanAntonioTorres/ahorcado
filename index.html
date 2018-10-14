@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>web para ahorcado</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+
+        <div class = "flexColumn">
+            <div class = "cabecera flexColumn">
+                <h1 class = "textoCentrado">Ahorcado</h1>
+                <div class = "flexFila filaPuntuaciones">
+                    <div class = "flexFila filaPuntuacionesAciertos">
+                        <div class = "flexColumn">
+                            <div class = "aciertos textoCentrado">aciertos</div>
+                            <div class = "imagenAciertos"></div>
+                        </div>
+                        <div class = "numeroAciertos flexColumn" id="numeroAciertos">0</div>
+                    </div>
+                    <div class = "flexFila filaPuntuacionesFallos">
+                        <div class = "flexColumn">
+                            <div class = "fallos textoCentrado">fallos</div>
+                            <div class = "imagenFallos"></div>
+                        </div>
+                        <div class = "numeroFallos flexColumn" id="numeroFallos">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "contenido flexFila">
+            <div class = "contenedorInformacion flexColumn">
+                <h2 class = "textoCentrado">Palabra Oculta</h2>
+                <h2 class = "palabraAdivinar textoCentrado" id = "palabraVisible"></h2>
+                <h4 id="pedirLetra" class = "textoCentrado">introduce letra</h4>
+                <input type="text" class="inputParaLetra" placeholder="letra" id ="imputLetra" autofocus> 
+                <h2 class="letraElegida textoCentrado" id="letraElegida"></h2>
+                <div class="mensaje textoCentrado" id="mensaje"></div>
+                <button class="botonReiniciar flexFila" id = "botonReiniciar"  onClick="window.location.reload()" >Reiniciar</button>
+            </div>
+            <div class = "contenedorParaAhorcado" id="divAhorcado"></div>
+        </div>
+        <div class = "panelGanador textoCentrado" id ="panelGanador">GANADOR</div>
+        <div class = "panelGanador textoCentrado" id = "panelPerdedor">NO GANADOR</div>
+    </body>
+    <script src="./index.js"></script>
+</html>
